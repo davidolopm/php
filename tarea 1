@@ -1,9 +1,9 @@
 1. Imprime (con echo o print) un hola mundo dentro de una estructura html.
 
 <html>
-    <body>
-        <?php echo "Hola mundo"; ?>
-    </body>
+<body>
+<?php echo "Hola mundo"; ?>
+</body>
 </html>
 
 2. Declara una variable numero1 con un valor de 5 y otra número2 con un valor de 2. Haz que el valor de esas variables se guarde en una variable llamada resultado.
@@ -18,25 +18,21 @@
 
 Do-while:
 $i = 1;
-do {
-echo $i;
-$i++;
-} while ($i <= 10);
+do {echo $i;$i++;} 
+while ($i <= 10);
 
 4. Muestra la tabla de multiplicar del 9
 
-for ($i = 1; $i <= 10; $i++) {
-echo "9 x " . $i . " = " . 9 * $i . "<br>";
-}
+for 
+($i = 1; $i <= 10; $i++) 
+{echo "9 x " . $i . " = " . 9 * $i . "<br>";}
 
 5. Crea un programa que defina una variable número, a la que le asignarás un valor. Si el valor es par, escribirá soy un número par. Si es impar, escribirá soy un número impar.
 <?php
  $numero = 7;
- if ($numero % 2 == 0) {
-     echo "Soy un número par";
- } else {
-     echo "Soy un número impar";
- }
+ if ($numero % 2 == 0) 
+ {echo "Soy un número par"} 
+ else {echo "Soy un número impar";}
  ?>
 
 
