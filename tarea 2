@@ -1,0 +1,9 @@
+1. Calcula el mayor de 2 enteros mediante el uso de un IF
+int num1 = 1;
+int num2 = 2;
+
+if (num1 > num2) {
+    System.out.println(num1 + " es mayor");
+} else {
+    System.out.println(num2 + " es mayor");
+}
