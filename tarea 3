@@ -1,0 +1,52 @@
+Crea un ficheiro PHP cun formulario semllante a este.
+
+<?php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de comentarios</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        
+        <label for="e-mail">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website"><br>
+        
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea><br>
+        
+        <label for="genero">Género:</label><br>
+        <input type="radio" id="genero" name="genero" value="hombre"> Hombre<br>
+        <input type="radio" id="genero" name="genero" value="mujer"> Mujer<br>
+        <input type="radio" id="genero" name="genero" value="Otro"> Otro<br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+?>
+
+Debe enviar os datos mediante post a outro ficheiro, que mostrará o contido deses campos:
+
+<?php
+
+$nombre = $_POST["nombre"];
+$email = $_POST["email"];
+$website = $_POST["website"];
+$comentarios = $_POST["comentarios"];
+$genero = $_POST["genero"];
+
+echo "Nombre: " . $nombre . "<br>";
+echo "Email: " . $email . "<br>";
+echo "Website: " . $website . "<br>";
+echo "Comentarios: " . $comentarios . "<br>";
+echo "Género: " . $genero;
+
+?>
